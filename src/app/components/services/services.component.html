@@ -1,0 +1,26 @@
+<!-- Services section starts -->
+<section id="services" class="services">
+    <!-- Title -->
+    <h1 class="gradient-text services-title">What I Offers?</h1>
+    <!-- Cards -->
+    <div class="container cards-container">
+        @for (service of services; track $index) {
+        <div class="flip-card">
+            <!-- card content -->
+            <div class="flip-card-inner">
+                <!-- Front card -->
+                <div class="flip-card-front">
+                    <img [src]="service.imgSrc" [alt]="service.alt" class="services-img">
+                    <h2>{{ service.title }}</h2>
+                </div>
+                <!-- Back card -->
+                <div class="flip-card-back">
+                    <p class="text-xs sm:text-sm md:text-base ">{{ service.description }}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <!-- Card ends -->
+</section>
+<!-- Services section ends -->

@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    @apply overflow-x-hidden p-0 m-0 bg-black;
+    font-family: "Varela Round", sans-serif;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.gradient-text{
+    background: -webkit-linear-gradient(#ffffff,#e50e59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-title{
+    @apply text-center mb-10 md:mb-20 font-bold  px-4 sm:px-0  sm:text-2xl lg:text-4xl
+  }

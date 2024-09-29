@@ -1,0 +1,9 @@
+.skills-card{
+    @apply lg:w-1/5 sm:w-1/3 pb-10 sm:pb-12 md:pb-20 max-[640px]:w-1/2 max-[280px]:w-full
+  }
+  .skills-img img{
+    @apply size-16  mx-auto
+  }
+  .skills-text{
+    @apply text-white text-xl font-bold text-center
+  }

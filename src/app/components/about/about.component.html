@@ -1,0 +1,87 @@
+<!-- ================About section starts here=================== -->
+<section class="about" id="about">
+    <div class="about">
+        <div class="aboutimg w-full lg:w-[40%] lg:mt-10">
+            <div class="image mx-auto px-3 mt-32 relative border-t border-b-2 border-l-2 border-r rounded-lg shadow-lg">
+                <img src="/assets/aboutimg.png" alt="aboutimage" class="w-2/3 mx-auto" />
+            </div>
+        </div>
+
+        <div class="abouttext">
+            <h1 class="text-4xl font-bold gradient-text">About Me</h1>
+            <p class="para mt-4 text-white w-5/6 text-sm sm:text-lg">
+                I am Sidra Khalid actively looking for an oppurtunity in the field of Website Development.I am a
+                well-rounded individual with a passion for technology and a strong work ethic. I am always eager to
+                learn new things and am always looking for ways to improve my skills. I am also a team player and enjoy
+                collaborating with others to achieve common goals.I take pride in exceeding client's expectations and
+                delivering project on time.
+            </p>
+
+            <!---------------------------tab button bar------------------------------>
+            <div class="mt-4 flex flex-row gap-4">
+                <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'Experience' }"
+                    (click)="setActiveTab('Experience')">
+                    Experience
+                </button>
+                <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'Education' }"
+                    (click)="setActiveTab('Education')">
+                    Education
+                </button>
+            </div>
+
+            <!-- Experience Tab data starts -->
+            @if ( activeTab === 'Experience') {
+            <div class="tab mt-8 flex flex-col gap-2.5">
+                <div>
+                    <div class="font-extrabold text-[#ff87b1cc]">
+                        Front End Developer at Qutham Technologies Bahawalpur, Pakistan
+                    </div>
+                    <div>Dec 2023 - Present</div>
+                    <div>
+                        Contributed to dynamic Web Projects at Qutham Technologies
+                    </div>
+                </div>
+                <div>
+                    <div class="font-extrabold text-[#ff87b1cc] mt-2">Frontend Developer at CodSoft</div>
+                    <div>Oct 2023 - Dec 2023</div>
+                    <div>Contributed to WebProjects using HTML,CSS,JS</div>
+                </div>
+                <div>
+                    <div class="font-extrabold text-[#ff87b1cc] mt-2">Frontend Developer(Intern) at BISE,Bahawalpur</div>
+                    <div>Aug 2023 - Oct 2023</div>
+                    <div>Contributed to WebProjects using HTML,CSS,JS</div>
+                </div>
+            </div>
+            }
+            <!-- Education Tab data starts -->
+            @if (activeTab === 'Education') {
+            <div class="tab mt-3">
+                <!-- Current Degree -->
+                <div class="font-bold pt-3 text-[#ff87b1cc]">
+                    The Islamia University Bahawalpur - 2021-2025
+                </div>
+                <div class="font-medium">
+                    BS Software Engineering<br />
+                    CGPA 3.95/4.0
+                </div>
+                <!-- Certification 1-->
+                <div class="font-bold pt-3 text-[#ff87b1cc]">
+                    Certification In WordPress Development Short Course
+                </div>
+                <div class="font-medium">
+                   By LWE
+                </div>
+                <!-- Certification 2-->
+                <div class="font-bold pt-3 text-[#ff87b1cc]">
+                    Basic Computer Course
+                </div>
+                <div class="font-medium">
+                    Noor College Rawalpindi
+                </div>
+            </div>
+            }
+
+        </div>
+    </div>
+</section>
+<!-- About Section ends -->

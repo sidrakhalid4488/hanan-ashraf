@@ -1,0 +1,22 @@
+<!-- Skills starts -->
+<section id="skills" class="pt-10">
+    <h1 class="gradient-text services-title">Areas of Expertise</h1>
+    <!-- Skill cards -->
+    <section class="text-gray-600">
+        <div class="px-5 md:px-10 lg:px-16 py-10 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                @for (skill of skills; track $index) {
+                <div class="skills-card">
+                    <a class="skills-img">
+                        <img [src]="skill.imgSrc" [alt]="skill.title">
+                    </a>
+                    <div class="mt-4">
+                        <h2 class="skills-text">{{ skill.title }}</h2>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+</section>
+<!-- skills section ends -->

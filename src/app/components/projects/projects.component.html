@@ -1,0 +1,30 @@
+<section class="services mt-32">
+    <!-- Title -->
+    <h1 class="gradient-text services-title">Gain Insights Into My Projects</h1>
+    <!-- Project Cards -->
+    <div class="project-cards">
+        @for (card of cards; track $index;let i= $index) {
+        <div class="card group">
+            <img [src]="card.image" alt="Card Image" class="card-img">
+            <div class="card-overlay">
+                <h2 class="title">{{ card.title }}</h2>
+                <p class="text-white mb-3 sm:mb-4 text-xs md:text-sm md:leading-4">{{ card.description }}</p>
+                <button class="card-btn" (click)="openModal(i)">{{ card.buttonText }}</button>
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Video Modals -->
+     @if (isModalOpen) {
+    <div class="modal-overlay">
+        <div class="modal-content">
+          <span class="close-btn" (click)="closeModal()">×</span>
+          <h2 class="mb-1 font-bold text-xs sm:text-lg">{{ cards[selectedCardIndex].title }}</h2>
+          <video width="100%" height="auto" controls #videoPlayer>
+            <source [src]="getVideoSrc(selectedCardIndex)" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    }
+</section>

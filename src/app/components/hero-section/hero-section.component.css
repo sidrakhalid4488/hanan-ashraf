@@ -1,0 +1,70 @@
+
+.home{
+    @apply flex 
+}
+.left , .right{
+    @apply min-h-[60vh] lg:min-h-[100vh] items-center
+}
+.left{
+    @apply flex bg-[linear-gradient(black,black)] w-full lg:w-[70%] pl-4 sm:pl-8
+}
+.right{
+    @apply w-[30%] bg-[linear-gradient(black,rgb(206,105,139))] hidden lg:block
+}
+/*icons*/
+.icons{
+    @apply flex flex-col justify-center items-center gap-6
+}
+.icons .fa-brands , .fa-solid{
+    @apply text-[rgb(253,182,219)] text-2xl
+}
+.icons .fa-brands:hover , .fa-solid:hover{
+    @apply text-[1.8rem] cursor-pointer;
+    background: -webkit-linear-gradient(#ffffff, #e50e59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*home*/
+.content{
+    @apply ml-7 sm:ml-16 lg:ml-[4.5rem] w-full;
+}
+.content .intro{
+    @apply text-lg md:text-2xl lg:text-[1.8rem]
+}
+.content .intro span{
+    @apply text-[#ff87b1] font-bold
+}
+.content h1{
+    @apply mt-1 text-2xl md:text-[1.9rem] lg:text-[2.3rem] text-[#e35788] font-bold
+}
+.content p{
+    @apply text-sm sm:text-base md:text-[1.1rem] leading-[1.8rem] text-white max-w-[20rem] sm:max-w-[30rem] mt-6 mb-10 mr-5 md:mr-0;
+}
+/*--buttons--*/
+
+.btn-container button a{
+    @apply [text-decoration:none] 
+}
+.btn-container button{
+    @apply border-[.2rem] border-solid border-[#d87093] text-sm sm:text-base p-[.5rem_.5rem] md:p-[.7rem_1.2rem] rounded-lg cursor-pointer 
+}
+.btn-container button:nth-child(1){
+    @apply bg-[#d87093] text-black hover:bg-transparent hover:text-[#d87093] w-28 sm:w-40 hover:[transition:.4s_ease]
+}
+.btn-container button:nth-child(2){
+    @apply bg-transparent text-[#d87093] ml-3 sm:ml-8 hover:bg-[#d87093] hover:text-black w-20 sm:w-28 hover:[transition:.4s_ease]
+}
+
+/*----picture ring effect-----*/
+.design .circle{
+    @apply absolute rounded-[50%] aspect-square top-[60%] left-[70%] [transform:translate(-50%,-50%)] hover:w-[17rem]
+}
+.circle:nth-child(1){
+    @apply bg-[linear-gradient(90deg,transparent_50%,black_50%)] w-[19rem]
+}
+.circle:nth-child(2){
+    @apply [background-image:url('/assets/profilephoto.png')] border-[.001rem] border-solid border-white [background-size:100%] w-64 bg-no-repeat;
+    box-shadow:  0 0 1rem white,inset 0 0 1rem white,0 0 1.8rem rgb(251, 135, 154),inset 0 0 1.8rem rgb(251, 135, 154),0 0 3rem rgb(249, 150, 167),inset  0 0 3rem rgb(249, 150, 167);
+}
+

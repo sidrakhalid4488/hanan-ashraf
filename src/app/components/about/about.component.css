@@ -1,0 +1,17 @@
+/*------------------------About------------------------- */
+.about{
+    @apply flex flex-col lg:flex-row mt-0 sm:mt-5 md:mt-0 lg:mt-10 text-white
+  }
+  .aboutimg .image {
+    @apply items-center justify-center m-[50px_50px] sm:m-[50px_80px] lg:m-[130px_90px] border-[#d1aab7] rounded-tl-xl rounded-br-xl rounded-tr-[30%] rounded-bl-[30%];
+    box-shadow:  0 0 1rem white,inset 0 0 1rem white,0 0 1.5rem rgb(251, 135, 154),inset 0 0 1.5rem rgb(251, 135, 154),0 0 2rem rgb(249, 150, 167),inset  0 0 2rem rgb(249, 150, 167);
+  }
+  .abouttext{
+    @apply w-full lg:w-[60%] p-5 sm:p-8 md:p-12
+  }
+  .tab-btn{
+    @apply text-white px-2 sm:px-4 py-2 rounded-md bg-[linear-gradient(white_1%,palevioletred,rgb(233,88,136))] hover:bg-[linear-gradient(palevioletred_80%,rgb(255,255,255))]
+  }
+  .tab-btn.active{
+    @apply  bg-[linear-gradient(rgb(233,88,136),palevioletred_70%,rgb(255,255,255))]
+  }

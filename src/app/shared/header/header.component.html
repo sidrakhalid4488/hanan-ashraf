@@ -1,0 +1,68 @@
+<nav class="navbar">
+    <div class="logo font-bold">
+      <p class="text-[#d87093]">SIDRA <span class="text-white">KHALID</span></p>
+    </div>
+    <div class="lg:hidden">
+      <button class="navbar-burger" (click)="toggleMenu()">
+        <svg
+          class="block h-4 w-4 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Mobile menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Desktop -->
+    
+    <ul class="lg-menu">
+      @for (item of MenuItems; track $index) {
+      <li class="relative group">
+        <a class="lg-link active"  (click)="onOptionSelected(item.route)" [ngClass]="{ 'active': activeSection === item.route }">{{ item.label }}</a>
+        <div class="bottom-line"></div>
+      </li>
+      }
+    </ul>
+  </nav>
+  <!-- Mobile view -->
+  <div class="navbar-menu relative z-50" [ngClass]="{'hidden': !isMenuOpen}">
+    <div class="navbar-backdrop" (click)="toggleMenu()"></div>
+    <nav class="sm-navbar">
+      <div class="flex items-center mb-8">
+        <a class="sm-logo" href="#">
+          <div class="logo">
+            <p class="text-[#d87093]">SIDRA <span class="text-white">KHALID</span></p>
+          </div>
+        </a>
+        <button class="navbar-close" (click)="toggleMenu()">
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <!-- Mobile screen list -->
+        <ul>
+          @for (item of MenuItems; track $index) {
+        
+          <li class="mb-1">
+            <a class="sm-link" (click)="onOptionSelected(item.route)" (click)="toggleMenu()">{{item.label}}</a>
+          </li>
+          }
+        </ul>
+      </div>
+    </nav>
+  </div>
+  

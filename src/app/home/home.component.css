@@ -1,0 +1,11 @@
+/*Scroll to top button*/
+.feedback {
+    @apply bg-[#d87093] p-[5px_10px] rounded-[7px] cursor-pointer
+}  
+#mybutton {
+    @apply mb-5 fixed -bottom-1 right-5 z-[10000]
+}
+/* Footer */
+.copyright{
+    @apply text-center mb-4 bg-black text-[#d87093]
+}
