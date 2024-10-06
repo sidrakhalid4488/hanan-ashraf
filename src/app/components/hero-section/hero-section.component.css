@@ -1,70 +1,39 @@
-
-.home{
-    @apply flex 
+.hero-section {
+    @apply  [margin-block-start:30px] sm:[margin-block-start:80px]  flex flex-col md:flex-row justify-between items-center bg-white  p-6 md:p-8
 }
-.left , .right{
-    @apply min-h-[60vh] lg:min-h-[100vh] items-center
-}
-.left{
-    @apply flex bg-[linear-gradient(black,black)] w-full lg:w-[70%] pl-4 sm:pl-8
-}
-.right{
-    @apply w-[30%] bg-[linear-gradient(black,rgb(206,105,139))] hidden lg:block
-}
-/*icons*/
+/* Social Icons */
 .icons{
-    @apply flex flex-col justify-center items-center gap-6
+  @apply absolute left-3 sm:left-8 transform space-y-5 flex flex-wrap flex-col 
 }
-.icons .fa-brands , .fa-solid{
-    @apply text-[rgb(253,182,219)] text-2xl
+.icons .fa-brands, .fa-solid {
+  @apply text-[color:rgba(5,100,159,0.961)] text-2xl block
 }
-.icons .fa-brands:hover , .fa-solid:hover{
-    @apply text-[1.8rem] cursor-pointer;
-    background: -webkit-linear-gradient(#ffffff, #e50e59);
+.icons .fa-brands:hover, .fa-solid:hover {
+  @apply text-[1.8rem] cursor-pointer;
+  background: -webkit-linear-gradient(#95beea, rgba(5,100,159,0.961));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/*home*/
-.content{
-    @apply ml-7 sm:ml-16 lg:ml-[4.5rem] w-full;
+/* Text-content */
+.hero-content{
+  @apply flex flex-col items-start ml-8 sm:ml-16 md:ml-24 md:w-1/2 gap-1 sm:gap-3.5
 }
-.content .intro{
-    @apply text-lg md:text-2xl lg:text-[1.8rem]
+.name{
+  @apply text-2xl sm:text-3xl lg:text-4xl font-bold
 }
-.content .intro span{
-    @apply text-[#ff87b1] font-bold
+.btn a ,.btn button{
+  @apply py-3 px-4 rounded text-xs text-white font-bold [background-image:linear-gradient(#063f7d,rgba(3,35,56,0.961))] hover:[background-image:linear-gradient(#031d38,rgba(12,92,150,0.961))]
 }
-.content h1{
-    @apply mt-1 text-2xl md:text-[1.9rem] lg:text-[2.3rem] text-[#e35788] font-bold
+/*Hero Image */
+.hero-img{
+  @apply flex flex-col items-center md:w-1/2 mt-12 md:mt-0
 }
-.content p{
-    @apply text-sm sm:text-base md:text-[1.1rem] leading-[1.8rem] text-white max-w-[20rem] sm:max-w-[30rem] mt-6 mb-10 mr-5 md:mr-0;
+.home-img {
+  @apply absolute md:right-[4%] lg:right-[8%] xl:right-[10%] md:top-[19%] lg:top-[17%] max-w-[460px];
 }
-/*--buttons--*/
-
-.btn-container button a{
-    @apply [text-decoration:none] 
+.home__blob {
+    @apply fill-[rgba(5,100,159,0.961)] min-w-64 sm:min-w-80 lg:min-w-[360px]; 
 }
-.btn-container button{
-    @apply border-[.2rem] border-solid border-[#d87093] text-sm sm:text-base p-[.5rem_.5rem] md:p-[.7rem_1.2rem] rounded-lg cursor-pointer 
+.home__blob-img {
+  @apply w-[360px] sm:w-[330px];
 }
-.btn-container button:nth-child(1){
-    @apply bg-[#d87093] text-black hover:bg-transparent hover:text-[#d87093] w-28 sm:w-40 hover:[transition:.4s_ease]
-}
-.btn-container button:nth-child(2){
-    @apply bg-transparent text-[#d87093] ml-3 sm:ml-8 hover:bg-[#d87093] hover:text-black w-20 sm:w-28 hover:[transition:.4s_ease]
-}
-
-/*----picture ring effect-----*/
-.design .circle{
-    @apply absolute rounded-[50%] aspect-square top-[60%] left-[70%] [transform:translate(-50%,-50%)] hover:w-[17rem]
-}
-.circle:nth-child(1){
-    @apply bg-[linear-gradient(90deg,transparent_50%,black_50%)] w-[19rem]
-}
-.circle:nth-child(2){
-    @apply [background-image:url('/assets/profilephoto.png')] border-[.001rem] border-solid border-white [background-size:100%] w-64 bg-no-repeat;
-    box-shadow:  0 0 1rem white,inset 0 0 1rem white,0 0 1.8rem rgb(251, 135, 154),inset 0 0 1.8rem rgb(251, 135, 154),0 0 3rem rgb(249, 150, 167),inset  0 0 3rem rgb(249, 150, 167);
-}
-

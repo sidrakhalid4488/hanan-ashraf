@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2032 1864" width="1280" height="1280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEFA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0E0E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5F9EA0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path transform="translate(0)" d="m0 0h2032v1864h-2032z" fill="#FEFEFE"/>
+  <path transform="translate(416,475)" d="m0 0h1101l19 2 14 3 15 6 16 8 14 10 12 11 11 12 10 15 7 14 7 19 3 16 1 13v51l-366 1-25 2-19 4-19 7-17 8-16 10-12 9-12 11-9 9-10 13-10 15-9 17-7 19-6 22-2 15-1 558-816 1v-777l2-17 5-16 9-21 12-18 12-13 9-9 17-12 21-10 12-4 17-3z" fill="url(#grad1)"/>
+  <path transform="translate(1287,744)" d="m0 0h356l20 2 16 5 16 8 9 7 8 7 8 10 9 16 5 16 2 12v732l-3 18-6 18-9 14-9 10-10 9-16 9-13 5-12 2-26 1h-348l-21-3-15-5-15-9-9-7v-2l-4-2-8-10-8-14-4-11-3-12-1-8v-733l3-18 6-17 10-15 10-11 13-10 14-7 11-4 10-2z" fill="url(#grad1)"/>
+  <path transform="translate(246,1464)" d="m0 0h859l1 1 1 105 2 16 7 25 8 20 6 11v2l-3 1h-841l-20-3-16-6-13-8-13-11-8-10-8-13-5-15-3-16v-58l3-12 6-11 7-7 11-7 9-3z" fill="url(#grad2)"/>
+  <path transform="translate(1414,1420)" d="m0 0h102l12 3 11 6 7 7 6 10 3 8 1 6v11l-5 15-6 8-4 5-11 7-8 3-6 1h-101l-12-3-11-7-9-10-5-11-2-7v-14l4-13 6-9 8-8 12-6z" fill="#FEFEFE"/>
+  <path transform="translate(1459,880)" d="m0 0h13l13 4 10 6 8 9 7 14 1 4v16l-5 13-8 11-11 8-10 4-5 1h-13l-13-4-11-8-8-10-5-11-2-9 1-12 5-13 8-11 10-7 10-4z" fill="#FEFEFE"/>
+</svg>
+

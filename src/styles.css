@@ -8,7 +8,7 @@ html {
 }
 
 body{
-    @apply overflow-x-hidden p-0 m-0 bg-black;
+    @apply overflow-x-hidden p-0 m-0 bg-white;
     font-family: "Varela Round", sans-serif;
 }
 
@@ -16,11 +16,19 @@ body.modal-open {
     overflow: hidden;
 }
 
-.gradient-text{
+/* .gradient-text{
     background: -webkit-linear-gradient(#ffffff,#e50e59);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
+.logo p:hover, .gradient-text{
+    background: -webkit-linear-gradient(#75d1e1, #042a59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 .services-title{
     @apply text-center mb-10 md:mb-20 font-bold  px-4 sm:px-0  sm:text-2xl lg:text-4xl
   }
+  /* .services-title{
+    @apply text-center mb-10 md:mb-20 font-bold text-4xl md:text-5xl lg:text-6xl
+  } */
