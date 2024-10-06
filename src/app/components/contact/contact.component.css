@@ -12,10 +12,10 @@
     @apply  mb-5 md:mb-10 font-bold text-2xl md:text-3xl lg:text-4xl
   }
   .contact-section input,textarea{
-    @apply w-full bg-white rounded-lg border-[2px] border-blue-900 shadow-md focus:border-blue-400 focus:ring-2 focus:ring-blue-300 text-base outline-none  py-3 px-4 leading-8 transition-colors duration-200 ease-in-out focus:outline-none 
+    @apply w-full bg-white rounded border border-gray-300 shadow-md focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-3 px-4 leading-8 transition-colors duration-200 ease-in-out
   }
   .contactbtn{
-    @apply text-center py-3 text-black rounded-md w-36 text-xs md:text-sm [background-image:linear-gradient(to_right,rgb(250,98,154),rgb(250,172,202),rgb(250,100,155))] hover:[background-image:linear-gradient(to_right,rgb(250,172,202),rgb(250,100,154),rgb(250,172,202))];
+    @apply text-center py-3 text-white rounded-md w-36 text-xs md:text-sm [background-image:linear-gradient(#063f7d,rgba(3,35,56,0.961))] hover:[background-image:linear-gradient(#031d38,rgba(12,92,150,0.961))] cursor-pointer
   }
   
   .custom-alert {
