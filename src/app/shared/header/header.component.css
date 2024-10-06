@@ -1,5 +1,5 @@
 .navbar {
-    @apply relative px-4 md:px-8 py-4 flex justify-between items-center bg-black text-white
+    @apply relative px-4 md:px-8 py-4 flex justify-between items-center bg-white 
   }
   .logo p{
     @apply text-base sm:text-xl
@@ -8,36 +8,36 @@
     @apply bg-[-webkit-linear-gradient(#ffffff,#e50e59)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]
   }
   .navbar-burger {
-    @apply flex items-center  p-3 text-[#d87093]
+    @apply flex items-center  p-3 text-[#042a59]
   }
   .bottom-line {
-    @apply absolute left-0 bottom-0 top-6 w-full h-0.5 bg-[#d87093] scale-x-0 group-hover:scale-x-100 transition-transform origin-left
+    @apply absolute left-0 bottom-0 top-6 w-full h-0.5 bg-[#042a59] scale-x-0 group-hover:scale-x-100 transition-transform origin-left
   }
   .lg-link {
-    @apply text-sm text-white hover:text-gray-200 hover:font-medium group-hover:text-[#d87093] transition-colors
+    @apply text-sm text-[#042a59] hover:text-gray-200 hover:font-medium group-hover:text-[#042a59] transition-colors
   }
   .lg-link.active {
-    @apply font-bold text-[#d87093]
+    @apply font-bold text-[#042a59]
   }
   .lg-link.active::after {
-    @apply absolute content-[''] w-full h-[0.15rem] left-0 top-[1.5rem] bg-[#d87093]
+    @apply absolute content-[''] w-full h-[0.15rem] left-0 top-[1.5rem] bg-[##042a59]
   }
   .lg-menu {
     @apply hidden absolute top-1/2 right-8 transform -translate-y-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6
   }
   .navbar-backdrop {
-    @apply fixed inset-0 bg-gray-900 opacity-25
+    @apply fixed inset-0 bg-white opacity-50 backdrop-blur-md
   }
   .sm-navbar {
-    @apply fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-full sm:max-w-sm py-6 px-6 bg-black border-r overflow-y-auto
+    @apply fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-full sm:max-w-sm py-6 px-6 bg-white border-r overflow-y-auto
   }
   .sm-logo {
     @apply mr-auto text-xl font-bold leading-none
   }
   .close-icon {
-    @apply h-6 w-6 text-[#d87093] cursor-pointer hover:text-gray-500
+    @apply h-6 w-6 text-[#042a59] cursor-pointer hover:text-gray-500
   }
   .sm-link {
-    @apply block p-4 text-sm font-semibold text-white hover:bg-[#d87093] hover:text-black rounded
+    @apply block p-4 text-sm font-semibold text-[#042a59] hover:bg-[#042a59] hover:text-white rounded
   }
   
