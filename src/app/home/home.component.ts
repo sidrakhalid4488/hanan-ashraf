@@ -8,11 +8,12 @@ import { ProjectsComponent } from '../components/projects/projects.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { UtilityServiceService } from '../services/utility-service.service';
 import * as AOS from 'aos';
+import { TestimonialsComponent } from '../components/testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,HeroSectionComponent,AboutComponent,SkillsComponent,ServicesComponent,ProjectsComponent,ContactComponent],
+  imports: [HeaderComponent,HeroSectionComponent,AboutComponent,SkillsComponent,ServicesComponent,ProjectsComponent,ContactComponent,TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

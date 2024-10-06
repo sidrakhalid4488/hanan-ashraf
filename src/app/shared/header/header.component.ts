@@ -25,7 +25,7 @@ export class HeaderComponent {
     { label: 'About', route: 'about' },
     { label: 'Skills', route: 'skills' },
     { label: 'Services', route: 'services' },
-    { label: 'Projects', route: 'projects' },
+    { label: 'Testimonials', route: 'projects' },
     { label: 'Contact', route: 'contact' }
   ];
 

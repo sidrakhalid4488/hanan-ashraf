@@ -1,42 +1,37 @@
 /* ----------------------Service Cards------------------------- */
 .services{
-    @apply my-10  flex flex-col items-center justify-center
-    }
-    .cards-container{
-      @apply mx-auto px-5 lg:px-20 xl:px-32 py-5 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 
-    }
-    .flip-card {
-      @apply w-3/4 md:w-full h-52 sm:h-72 mx-auto rounded-lg [perspective:1000px]  shadow-[0_4px_8px_rgb(238,142,160)]
-    }
-    .services-img{
-      @apply size-24 sm:size-32 rounded-full mb-4 sm:mb-6
-    }
-    .flip-card-inner {
-      @apply relative w-full h-full [transition:transform_0.6s] [transform-style:preserve-3d];
-    }
-    .flip-card-front{
-      @apply absolute w-full h-full bg-black shadow-md rounded-lg p-4 flex flex-col items-center justify-center text-[#fff9f9];
-      box-shadow: 0 0 0.5rem rgb(45, 45, 45),
-      inset 0 0 0.5rem rgb(35, 35, 35),
-      0 0 1rem rgb(238, 142, 158),
-      inset 0 0 1rem rgb(238, 142, 160);
-    }
-    .flip-card-front h2{
-      @apply text-base md:text-xl font-bold text-center
-    }
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-    .flip-card-front, .flip-card-back {
-      backface-visibility: hidden;
-    }
-    .flip-card-back {
-      @apply absolute w-full h-full  shadow-md rounded-lg p-4 sm:px-8 flex items-center justify-center text-white text-center;
-      transform: rotateY(180deg);
-      box-shadow: 0 0 0.5rem rgb(0, 0, 0),
-      inset 0 0 0.5rem rgb(0, 0, 0),
-      0 0 1rem rgb(0, 0, 0),
-      inset 0 0 1rem rgb(230, 173, 173);
-      transform: rotateY(180deg);
-    
-    }
+  @apply my-10  flex flex-col items-center justify-center
+  }
+  .cards-container{
+    @apply mx-auto px-5 lg:px-20 xl:px-32 py-5 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 
+  }
+  .flip-card {
+    @apply w-3/4 md:w-full h-48 sm:h-72 mx-auto rounded-lg [perspective:1000px]  shadow-[0_4px_8px_rgba(70,130,180,0.4)]
+  }
+  .services-img{
+    @apply size-24 sm:size-32 rounded-full mb-4 sm:mb-6
+  }
+  .flip-card-inner {
+    @apply relative w-full h-full;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-front{
+    @apply absolute w-full h-full bg-white shadow-md rounded-lg p-4 flex flex-col items-center justify-center
+  }
+  .flip-card-front h2{
+    @apply text-base md:text-xl font-bold text-center
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    @apply absolute w-full h-full  shadow-md rounded-lg p-4 sm:px-8 flex items-center justify-center text-white text-center;
+    transform: rotateY(180deg);
+    background: linear-gradient(to bottom right, #B0E0E6, #5F9EA0);
+    /* background: linear-gradient(to bottom right, #4B6A9B, #003366); */
+  
+  }

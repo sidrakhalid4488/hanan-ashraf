@@ -1,0 +1,24 @@
+.testimonials{
+    @apply my-5 md:my-20
+  }
+  .testimonial-container
+  {
+    @apply flex flex-col items-center justify-center mx-auto md:flex-row md:flex-wrap lg:justify-evenly lg:px-10
+  }
+  .testimonial-card{
+    @apply flex flex-col max-w-xs mx-2 my-4 shadow-lg transition-transform transform hover:scale-105
+  }
+  .upper-div{
+    @apply px-6 py-6 rounded-t-lg sm:px-8 bg-blue-50
+  }
+  .testimonial-text
+  {
+    @apply relative px-3 py-1 text-sm italic text-center text-gray-800 leading-tight
+  }
+  .testimonials-bg{
+    @apply flex flex-col items-center justify-center p-4 rounded-b-lg text-gray-50;
+    background: linear-gradient(#81aad6, rgba(8, 51, 78, 0.961));
+  }
+  .client{
+    @apply text-lg font-semibold leading-tight
+  }

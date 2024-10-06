@@ -1,26 +1,38 @@
-<!-- Services section starts -->
 <section id="services" class="services">
-    <!-- Title -->
-    <h1 class="gradient-text services-title">What I Offers?</h1>
-    <!-- Cards -->
+    <h1 class="gradient-text services-title">Services</h1>
     <div class="container cards-container">
-        @for (service of services; track $index) {
-        <div class="flip-card">
-            <!-- card content -->
-            <div class="flip-card-inner">
-                <!-- Front card -->
-                <div class="flip-card-front">
-                    <img [src]="service.imgSrc" [alt]="service.alt" class="services-img">
-                    <h2>{{ service.title }}</h2>
-                </div>
-                <!-- Back card -->
-                <div class="flip-card-back">
-                    <p class="text-xs sm:text-sm md:text-base ">{{ service.description }}</p>
-                </div>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/andriod.svg" alt="Andriod" class="services-img">
+            <h2>Andriod Development</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Experienced Android developer adept at crafting robust and user-friendly mobile applications for diverse user needs</p>
+          </div>
         </div>
-        }
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/ios.svg" alt="IOS" class="services-img">
+            <h2>IOS Development</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Experienced iOS developer skilled in crafting polished and intuitive mobile applications for seamless user experiences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/responsive.svg" alt="responsive" class="services-img">
+            <h2>Responsive Design</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>Create adaptable layouts that ensure a seamless user experience across all devices and screen sizes.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Card ends -->
-</section>
-<!-- Services section ends -->
+  </section>
