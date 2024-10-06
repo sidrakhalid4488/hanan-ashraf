@@ -12,7 +12,7 @@ import { NgClass } from '@angular/common';
 })
 export class HeaderComponent {
   isMenuOpen = false;
-  activeSection = 'home';
+  activeSection = '';
   constructor(private utilityService: UtilityServiceService) {}
 
   onOptionSelected(sectionId: string) {
@@ -21,7 +21,7 @@ export class HeaderComponent {
   }
 
   MenuItems = [
-    { label: 'Home', route: 'home' },
+    { label: 'Home', route: '' },
     { label: 'About', route: 'about' },
     { label: 'Skills', route: 'skills' },
     { label: 'Services', route: 'services' },

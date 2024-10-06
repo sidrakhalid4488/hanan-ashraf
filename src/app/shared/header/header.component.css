@@ -20,7 +20,7 @@
     @apply font-bold text-[#042a59]
   }
   .lg-link.active::after {
-    @apply absolute content-[''] w-full h-[0.15rem] left-0 top-[1.5rem] bg-[##042a59]
+    @apply absolute content-[''] w-full h-[0.15rem] left-0 top-[1.5rem] !bg-[#042a59]
   }
   .lg-menu {
     @apply hidden absolute top-1/2 right-8 transform -translate-y-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6
